@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "dev": "npx webpack --env=dev --config=webpack/webpack.config.js",
+    "dev": "npx webpack-dev-server --open --env=dev --config=webpack/webpack.config.js    ",
     "prod": "npx webpack --env=prod --config=webpack/webpack.config.js"
   },
   "husky": {
@@ -41,9 +41,12 @@
     "babel-plugin-istanbul": "^6.0.0",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.17.0",
+    "html-webpack-plugin": "^3.2.0",
     "husky": "^4.0.10",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "react": "^16.12.0",

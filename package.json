@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "dev": "npx webpack --env=dev --config=webpack/webpack.config.js",
+    "prod": "npx webpack --env=prod --config=webpack/webpack.config.js"
   },
   "husky": {
     "hooks": {
